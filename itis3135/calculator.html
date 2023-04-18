@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="">
+    <title>ITIS3135 | Joshua Higgins' Joyful Hedgehog | Template</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/default.css"> -->
+
+	<link rel="stylesheet" type="text/css" href="styles/default.css">
+   
+    
+</head>
+<body>
+    <header>
+        <script src="./scripts/nav.js"></script>
+    </header>
+
+    <div class="calculator">
+        <div class="screen">
+          <input type="text" id="output" disabled>
+          <div id="previous"></div>
+        </div>
+        <div class="buttons">
+          <button onclick="addToOutput('7')">7</button>
+          <button onclick="addToOutput('8')">8</button>
+          <button onclick="addToOutput('9')">9</button>
+          <button onclick="addToOutput('/')">/</button>
+          <button onclick="addToOutput('4')">4</button>
+          <button onclick="addToOutput('5')">5</button>
+          <button onclick="addToOutput('6')">6</button>
+          <button onclick="addToOutput('*')">*</button>
+          <button onclick="addToOutput('1')">1</button>
+          <button onclick="addToOutput('2')">2</button>
+          <button onclick="addToOutput('3')">3</button>
+          <button onclick="addToOutput('-')">-</button>
+          <button onclick="addToOutput('0')">0</button>
+          <button onclick="addToOutput('.')">.</button>
+          <button onclick="clearOutput()">C</button>
+          <button onclick="addToOutput('+')">+</button>
+          <button onclick="calculate()">=</button>
+        </div>
+      </div>
+      <script>
+        let output = document.getElementById('output');
+        let previous = document.getElementById('previous');
+  
+        function addToOutput(value) {
+          output.value += value;
+        }
+  
+        function clearOutput() {
+          output.value = '';
+        }
+  
+        function calculate() {
+          previous.innerText = output.value;
+          output.value = eval(output.value);
+        }
+      </script>
+      
+      
+      
+
+  </head>
+  <body>
+     
+  </body>
+
+            </div>
+          </div>
+          <script src="calc.js"></script>
+    </main>
+    
+    <footer>
+        <script src="scripts/footerNav.js"></script>
+        <div class="validation">
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="images/htmlValidation.png" width="88" height="31" alt="Validate webpage HTML." />
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="images/cssValidation.png" width="88" height="31" alt="Validate webpage CSS." />
+            </a>
+        </div>
+        <p class="brand">Page designed by <a href="higginsenterprise.co/higginsEnterprise.html">Higgins Enterprise</a> 2023</p> 
+    </footer>
+</body>
+</html>

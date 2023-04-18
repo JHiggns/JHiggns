@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyHobby | Hiking</title>
+
+  <style>
+    /* Style for the nav menu */
+    body{
+        background-color: #F7F2E7;
+        color: #4A4A4A;
+
+
+ 
+        /* Text color: #4A4A4A (medium grey)
+Background color: #F7F2E7 (light cream)
+Navigation color: #D98E04 (warm brown) */
+    }
+    h1{
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:#D98E04;
+      color: #333333;
+      height: 50px;
+      margin-bottom: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: antiquewhite;
+      margin: 0 20px;
+      font-size: 20px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    /* Style for the sections */
+    section {
+      display: none;
+      width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    section.active {
+      display: block;
+      
+    }
+    section img {
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      
+    }
+    figcaption {
+      text-align: center;
+      font-style: italic;
+
+    }
+
+    .footer-links{
+    display:inline-block;
+    padding-right: 5px 10px;
+}
+footer a:link{
+    color: orange;
+}
+ footer a:visited{
+    color:orange;
+}
+
+footer a:hover{
+    color: teal;
+}
+
+footer a:active{
+    color: teal;
+}
+
+ a:hover{
+    color: teal;
+}
+
+ a:active{
+    color: teal;
+}
+
+
+footer{
+
+  margin-bottom: 80px;
+    margin-top:75px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.companyDesign{
+  text-align: center;
+}
+
+.validation{
+    padding-top:20px;
+    padding-left: 45%;
+}
+
+  </style>
+
+  <!-- Open-source images used for the example -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    
+    <h1>Hiking</h1>
+  <nav>
+    <a href="#section1">Home</a>
+    <a href="#section2">About Me</a>
+    <a href="#section3">Season</a>
+    <a href="#section4">Where</a>
+    <a href="#section5">Why</a>
+    <a href="#section6">Tips</a>
+
+  </nav>
+  
+  <section id="section1" class="active">
+    <h2>Home</h2>
+    <p>Welcome to the home page of my hiking cite</p>
+    <p>If you enjoy hiking look around my cite. Here you can visit pages about me, a schedule for hiking, where to hike, why hiking is a great activity, and learn some tips</p>
+    <figure>
+      <img src="hobbyImages/hikingHome.jpg" alt="Man enjoying a hike over some mountains">
+      <figcaption>Lots of scenic views!</figcaption>
+    </figure>
+  </section>
+  <section id="section2">
+    <h2>About Me</h2>
+    <p>I am 20 years old and attend UNC Charlotte where I am studying for my masters degree in Computer Science</p>
+    <p>I enjoy hiking because its a good way to get some exercise and relax</p>
+    <figure>
+      <img src="hobbyImages/forestHobby.jpg" alt="Trail through the woods">
+      <figcaption>Trail through the woods</figcaption>
+    </figure>
+  </section>
+  <section id="section3">
+    <h2>Season</h2>
+    <p>Hiking can be enjoyed year round as long as you're prepared (see tips for more information) for the correct environment</p>
+
+
+
+
+
+
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      </head>
+      <body>
+        <main>
+        <h1>Hiking Popularity by Month</h1>
+        <h2>Based on a survey conducted by the National Park Service</h2>
+
+        <canvas id="hiking-chart"></canvas>
+        <script>
+          var ctx = document.getElementById("hiking-chart").getContext("2d");
+          var myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ],
+              datasets: [
+                {
+                  label: "Popularity of Hiking",
+                  data: [15, 18, 25, 35, 50, 75, 85, 80, 60, 45, 25, 20],
+                  backgroundColor: [
+                    "rgba(255, 99, 132, 0.2)",
+                    "rgba(54, 162, 235, 0.2)",
+                    "rgba(255, 206, 86, 0.2)",
+                    "rgba(75, 192, 192, 0.2)",
+                    "rgba(153, 102, 255, 0.2)",
+                    "rgba(255, 159, 64, 0.2)",
+                    "rgba(255, 99, 132, 0.2)",
+                    "rgba(54, 162, 235, 0.2)",
+                    "rgba(255, 206, 86, 0.2)",
+                    "rgba(75, 192, 192, 0.2)",
+                    "rgba(153, 102, 255, 0.2)",
+                    "rgba(255, 159, 64, 0.2)"
+                  ],
+                  borderColor: [
+                    "rgba(255, 99, 132, 1)",
+                    "rgba(54, 162, 235, 1)",
+                    "rgba(255, 206, 86, 1)",
+                    "rgba(75, 192, 192, 1)",
+                    "rgba(153, 102, 255, 1)",
+                    "rgba(255, 159, 64, 1)",
+                    "rgba(255, 99, 132, 1)",
+                    "rgba(54, 162, 235, 1)",
+                    "rgba(255, 206, 86, 1)",
+                    "rgba(75, 192, 192, 1)",
+                    "rgba(153, 102, 255, 1)",
+                    "rgba(255, 159, 64, 1)"
+                  ],
+                  borderWidth: 1
+                }
+                
+              ]
+            },
+            options: {
+              scales: {
+                yAxes: [
+                  {
+                    ticks: {
+                      beginAtZero: true
+                    }
+                  }
+                ]
+              }
+            }
+          });
+        </script>
+      
+    
+
+
+
+
+
+
+    <p>My personal favorite time to go hiking is in the middle of spring when the weather is just warming up and everythings starting to blossom.</p>
+    <figure>
+      <img src="hobbyImages/springHobby.jpg" alt="Random Image">
+      <figcaption>Hiking in the spring is the best</figcaption>
+    </figure>
+  </section>
+  <section id="section4">
+    <h2>Where</h2>
+    <p>Everyone has their own definition of hiking. For some its extreme mountains and for others its a a gravel trail throught the woods</p>
+    <p>I personally prefer hiking through the woods with moderate difficulty hills so that I can get a good view without having to excert a lot of effort</p>
+    <figure>
+      <img src="hobbyImages/whereHobby.jpg" alt="Trail through a park">
+      <figcaption>A simple walk around a local park can be lots of fun!</figcaption>
+    </figure>
+  </section>
+  <section id="section5">
+    <h2>Why</h2>
+    <p>Hiking is a wonderful activity that offers a wide range of benefits for both physical and mental health. If you're looking for a fun and rewarding way to stay active, connect with nature, and reduce stress, then hiking is definitely worth considering. Not only does hiking provide an excellent form of exercise that can improve cardiovascular health, build endurance, and strengthen muscles, but it also offers opportunities for personal growth and development, increased creativity, and socialization. Plus, with many beautiful hiking trails available, you can explore new places and appreciate the beauty of the natural world. So, whether you're an experienced hiker or just starting out, grab your hiking boots and hit the trails – you won't regret it!</p>
+    
+    <figure>
+      <img src="hobbyImages/happyHobby.jpg" alt="Random Image">
+      <figcaption>Hiking is great way to spend time with friends</figcaption>
+    </figure>
+    <ul>List of benefits: 
+      <li>Improved mood</li>
+      <li>Improve phsyical fitness</li>
+      <li>Improve cognitive function</li>
+      <li>Low-cost</li>
+    </ul>
+  </section>
+  <section id="section6">
+    <h2>Tips</h2>
+    <p><ul>
+      <li>Plan ahead: Before heading out on a hike, research the trail you'll be hiking on, check the weather forecast, and pack accordingly.</li>
+      <li>Wear appropriate clothing and footwear: Choose clothing and footwear that are comfortable, breathable, and appropriate for the weather and terrain.</li>
+      <li>Bring plenty of water: Staying hydrated is crucial when hiking, so make sure to bring enough water for the duration of your hike.</li>
+      <li>Pack a first aid kit: Accidents can happen on the trail, so bring a first aid kit with basic supplies to address any injuries or emergencies.</li>
+      <li>Use a trail map or GPS: To avoid getting lost on the trail, bring a trail map or use a GPS device to navigate.</li>
+      <li>Stay on the trail: To protect the natural environment and avoid getting lost, always stay on the designated trail.</li>
+      <li>Leave no trace: Pack out all trash and dispose of it properly, and avoid damaging or disturbing natural features.</li>
+      <li>Pace yourself: Take breaks as needed, and don't push yourself beyond your physical abilities.</li>
+      <li>Watch out for wildlife: Keep a safe distance from wildlife, and don't feed or approach them.</li>
+      <li>Hike with a buddy: Hiking with a partner or group is safer and more enjoyable than hiking alone.</li>
+    </ul>
+    </p>
+    <p>Most importantly have fun!</p>
+    <figure>
+      <img src="hobbyImages/hikingSupplies.jpg" alt="water bottle and a map">
+      <figcaption>Some useful supplies for hiking</figcaption>
+    </figure>
+  </section>
+
+  <script>
+    // Get all the nav links and sections
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section');
+
+    // Add event listeners to the nav links to toggle sections
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault(); // Prevent default link behavior
+        const targetId = link.getAttribute('href'); // Get target section ID
+        const targetSection = document.querySelector(targetId); // Get target section element
+
+        // Deactivate all sections
+        sections.forEach(section => section.classList.remove('active'));
+        // Activate target section
+        targetSection.classList.add('active');
+      });
+    });
+  </script>
+
+</main>
+
+<footer>
+  <p class="companyDesign">Page designed by <a href= "../higginsenterprise.co/higginsEnterprise.html">Higgins Enterprise</a> 2023</p> 
+  
+
+  <div class="validation">
+            
+    <a href="https://validator.w3.org/check?uri=referer">
+        <img src="../images/htmlValidation.png" width="88" height="31" alt="Validate webpage HTML." />
+    </a>
+    
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="../images/cssValidation.png" width="88" height="31" alt="Validate webpage CSS." />
+    </a>
+    
+</div>
+
+
+</footer>
+</body>
+
+</html>

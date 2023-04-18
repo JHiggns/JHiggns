@@ -1,0 +1,213 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, rgba(200, 200, 200, 0.9), rgba(230, 230, 230, 0.7) 70%, rgba(255, 255, 255, 0.5) 85%, rgba(255, 255, 255, 0) 100%);
+ 
+}
+
+body{
+  background-color: antiquewhite;
+  color:rgb(89, 36, 2);
+}
+
+
+  
+  nav img {
+  width: 50px;
+  margin-right: 10px;
+  }
+  
+  nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  }
+  
+  nav li {
+  margin: 0;
+  }
+  
+  nav a {
+  display: block;
+  padding: 5px;
+  margin-right: calc(2% + 5px);
+  transition: all 0.3s ease-in-out;
+  }
+  
+  @media only screen and (min-width: 768px) {
+  nav {
+  flex-wrap: nowrap;
+  }
+  nav a {
+  margin-right: calc(20px + 1vw);
+  padding: 10px 20px;
+  }
+  }
+
+  a{
+    color:rgb(89, 36, 2); 
+    text-decoration: none;
+   }
+  
+
+    a:hover{
+      text-decoration: overline underline solid rgb(89, 36, 2);
+      font-size: 19px;
+    }
+  
+  @media only screen and (max-width: 768px) {
+  nav a {
+  margin-right: 0;
+  margin-bottom: 5px;
+  padding: 5px;
+  }
+  }
+  
+/* Styling for the slide show container */
+.slideshow-container {
+  max-width: 500\px;
+  position: relative;
+  margin: auto;
+}
+
+/* Styling for the slides */
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+/* Styling for the previous and next buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+}
+
+/* Styling for the caption text */
+.caption-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+}
+
+
+ h1 {
+      text-align: center;
+    }
+    .button-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: gray;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+
+
+
+
+
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .section-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .section-link {
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .active-section {
+      display: block;
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      margin: 10px;
+      text-align: center;
+    }
+    
+    .column img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .column p {
+      margin-top: 10px;
+    }
+    
+    /* Media query for larger screens */
+    @media (min-width: 768px) {
+      .column {
+        flex-basis: calc(33.33% - 20px);
+      }
+    
+      /* Ensure right-most product moves down first */
+      .column:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+    
+    /* Media query for smaller screens */
+    @media (max-width: 767px) {
+      .column {
+        flex-basis: 100%;
+        margin-right: 0;
+      }
+    }
+
+
+    .section {
+      display: none;
+    }
+    
+    .active-section {
+      display: block;
+    }
+
+ 
